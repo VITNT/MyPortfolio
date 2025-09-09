@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.19/dist/lenis.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="name"><p>Visott Tieng</p></div>
+      <div>
+        <ul class="navLinks">
+          <div class="nav-link-container">
+            <li><a class="navBtn" href="#intro">Intro</a></li>
+            <div class="indicator"></div>
+          </div>
+          <div class="nav-link-container">
+            <li><a class="navBtn" href="#about">About Me</a></li>
+            <div class="indicator"></div>
+          </div>
+          <div class="nav-link-container">
+            <li><a class="navBtn" href="#project">Projects/Achievements</a></li>
+            <div class="indicator"></div>
+          </div>
+          <div class="nav-link-container">
+            <li><a class="navBtn" href="#contact">Contact</a></li>
+            <div class="indicator"></div>
+          </div>
+        </ul>
+      </div>
+      <div class="clock">
+        <div class="clock__int">
+          <span id="hr">00</span>
+          <span>:</span>
+          <span id="min">00</span>
+          <span>:</span>
+          <span id="s">00</span>
+        </div>
+        <span id="am"></span>
+      </div>
+      <button class="dark-light-button">
+        <img
+          src="moon-icon.png"
+          alt="Dark/Light Mode Icon"
+          height="20px"
+          class="mode-icon"
+        />
+        <img
+          src="sun-icon.png"
+          alt="Dark/Light Mode Icon"
+          height="20px"
+          class="mode-icon"
+        />
+      </button>
+    </nav>
+    <!-- intro -->
+    <section id="intro" class="main">
+      <div class="introWrapper">
+        <img
+          class="homeImg"
+          src="https://github.com/Visott/visott-images/blob/main/profile.jpg?raw=true"
+        >
+        <div class="intro">
+          <h3>Hi, I'm Visott.</h3>
+          <br />
+          <p>
+            I am currently enrolled at CIA First International Highschool. This
+            is a webpage showcasing my favorite projects and interests.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- about me section -->
+    <section id="about">
+      <div class="about-me-title">
+        <h1>About Me</h1>
+      </div>
+      <div class="about-me">
+        <div class="about-me-location">
+          <img
+            class="about-me-image"
+            src="https://lostplate.com/wp-content/uploads/2020/05/Phnom-Penh-Food-Tour-Independence-Monument.jpg"
+            alt="phnom-penh-photo"
+          />
+          <p>
+            I am a teenager living in Phnom Penh, the capital city of Cambodia.
+          </p>
+        </div>
+        <div class="about-me-school">
+          <p>As of right now, I am in my sophomore year of Highschool.</p>
+          <img class="about-me-image"
+          src=https://lh3.googleusercontent.com/p/AF1QipOhe9Ng91GKQAPf4OJJa60YcXBMB4VeYCPPIu9g=s1360-w1360-h1020
+          alt="image-of-cia-highschool"/>
+        </div>
+        <div class="about-me-code">
+          <p>Programming Languages that I am currently learning are:</p>
+          <div class="marquee">
+            <div class="box box1">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png"
+                alt="js-logo"
+              />
+              <p>Javascript</p>
+            </div>
+            <div class="box box2">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="python-logo"></img>
+              <p>Python</p>
+            </div>
+            <div class="box box3">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/free-html-5-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-language-pack-logos-icons-1175208.png?f=webp&w=256" alt="html-logo"></img>
+              <p>HTML</p>
+            </div>
+            <div class="box box4">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg " alt="css-logo">
+              <p>CSS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="interests">
+        <h3 class="interest-title">Favorite Subjects</h3>
+        <div class="interest-wrapper">
+          <div class="math">
+            <img src="https://github.com/Visott/visott-images/blob/main/Math%20Icon.png?raw=true">
+            <p>Math</p>
+          </div>
+          <div class="code">
+            <img src="https://github.com/Visott/visott-images/blob/main/Programming%20Icon.png?raw=true">
+            <p>ICT</p>
+          </div>
+          <div class="physics">
+            <img src="https://github.com/Visott/visott-images/blob/main/Physics%20Icon.png?raw=true">
+            <p>Physics</p>
+          </div>
+          <div class="chem">
+            <img src="https://github.com/Visott/visott-images/blob/main/Chemistry%20Icon.png?raw=true">
+            <p>Chemistry</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Books">
+      <div class="books__heading">
+        <h1>Some of the Books That I Have Read</h1>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/81q77Q39nEL._AC_UF1000,1000_QL80_.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/818umIdoruL.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/81NQA1BDlnL._AC_UF1000,1000_QL80_.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/81zeKRGCPpL._AC_UF1000,1000_QL80_.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/81Budsu1XBL.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_360,c_scale,dpr_1.5/jackets/9781408855942.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/81aCMT1zKtL._AC_UF1000,1000_QL80_.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/81B-smvZY+L.jpg" alt="">
+          </div>
+        </div>
+        <div class="column column-reverse">
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/61ljzayGRML.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781442475106/michael-vey-2-9781442475106_hr.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/71vbdwVXyDL._AC_UF1000,1000_QL80_.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781481424394/michael-vey-4-9781481424394_hr.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781481444118/michael-vey-5-9781481444118_hr.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/71brbnyTJpL.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781481497046/michael-vey-7-9781481497046_hr.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/71ODPf2jQ2L.jpg" alt="">
+          </div>
+        </div>
+        <div class="column">
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/91WN6a6F3RL._AC_UF1000,1000_QL80_.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/91YMTyxpWLL.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/91Ca-K4vjOL.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/91GjM4M5DeL._AC_UF1000,1000_QL80_.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/91f6FyULwCL.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/81pjV-scHpL.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/91-8GTf+1oL._AC_UF1000,1000_QL80_.jpg" alt="">
+          </div>
+          <div class="column__item">
+            <img src="https://m.media-amazon.com/images/I/91QNN2dOY6L._AC_UF894,1000_QL80_.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects and Achievements -->
+    <section id="project" class="project-section">
+      <div class="project-title">
+        <h1>My Projects and Achievements</h1>
+      </div>
+      <div class="grid-container">
+        <div class="item">
+          <img src="https://www.sciencebuddies.org/cdn/Files/20598/4/blobid1721648829177.jpg"/>
+          <p>Solar Panel Project using Arduino Kit</p>
+        </div>
+        <div class="item">
+          <img src="https://github.com/Visott/visott-images/blob/main/arduino__competition.jpg?raw=true">
+          <p>Arduino Competition</p>
+        </div>
+        <div class="item">
+          <img src="https://github.com/Visott/visott-images/blob/main/quiz__bee.jpg?raw=true">
+          <p>Science Quiz-Bee Winner</p>
+        </div>
+        <div class="item">
+          <img src="https://github.com/Visott/visott-images/blob/main/khmer__slo.jpg?raw=true">
+          <p>Khmer SLO</p>
+        </div>
+        <div class="item">
+          <img src="https://github.com/Visott/visott-images/blob/main/slo.jpg?raw=true">
+          <p>English SLO</p>
+        </div>
+        <div class="item">
+          <img src="https://github.com/Visott/visott-images/blob/main/Gold%20AMC%20910%20Export-1.png?raw=true" alt="">
+          <p>AMC Gold Medalist</p>
+        </div>
+        <div class="item">
+          <img src="https://github.com/Visott/visott-images/blob/main/angkor-run.jpg?raw=true" alt="">
+          <p>Participated in Angkor Run 2023</p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-me">
+      <div>
+        <p class="contact-header">Contact Me</p>
+      </div>
+      <div class="contact-container">
+        <form class="contact-form" onsubmit="return validateForm()">
+          <input
+            type="text"
+            id="fname"
+            name="fullname"
+            class="contact-input"
+            placeholder="Your Fullname..."
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="contact-input"
+            placeholder="Your Email..."
+          />
+          <textarea
+            id="subject"
+            name="subject"
+            class="contact-input"
+            placeholder="Type Your Message Here..."
+            style="height: 150px"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="contact-info">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.0704846267677!2d104.86317247505339!3d11.546801588652704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951f895a64d83%3A0x952f6b93a2ea10ac!2sCIA%20FIRST%20International%20School%20-%20High%20School!5e0!3m2!1sen!2skh!4v1735562452316!5m2!1sen!2skh"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <p>Location: 839, Doung Ngeab, Khan Mean Chey Phnom Penh, 12102</p>
+          <p>Email: visott.tieng@ciaschool.edu.kh</p>
+          <p>Telegram: @VISOTT</p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-container">
+      <div class="footer">
+        <div class="footer-heading heading-left">
+          <p>Visott Tieng</p>
+          <hr/>
+          <p>Copyright © 2024-2025</p>
+          <p>Last Updated: Dec 31 2024</p>
+        </div>
+        <div class="heading-right">
+          <div class="footer-heading heading-1">
+            <h1>Quick Links</h1>
+            <a href="#intro">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#project">Projects/Achievements</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-heading heading-2">
+            <h1>Contact Info</h1>
+            <a>Email: visott.tieng@ciaschool.edu.kh</a>
+            <a>Telegram: @VISOTT</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/lenis@1.1.19/dist/lenis.min.js"></script> 
+    <script>
+      const lenis = new Lenis();
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+    </script>
+  </body>
+</html>

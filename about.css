@@ -1,0 +1,265 @@
+.about-me-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  min-height: 20vh;
+  margin-bottom: -70px;
+}
+
+.about-me-location,
+.about-me-school {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  font-size: 1.5rem;
+  min-height: 70vh;
+  margin: auto;
+}
+
+.about-me-location p,
+.about-me-school p {
+  max-width: 28ch;
+  line-height: 1.5;
+  color: var(--gray-color);
+}
+
+.about-me-image {
+  min-height: 360px;
+  max-width: 640px;
+  height: auto;
+  opacity: 0;
+  clip-path: inset(45% 20% 45% 20%);
+  border-radius: 2rem;
+  border: 1px solid #f2f2f24d;
+  padding: 8px;
+  box-shadow: inset 0 0 10px #0909091a;
+  overflow: hidden;
+}
+
+.about-me-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5em;
+  min-height: 50vh;
+}
+
+.marquee {
+  width: 1000px;
+  position: relative;
+  height: 75px;
+  margin-top: 5rem;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,1) 80%,
+    rgba(0,0,0,0)
+  );
+}
+
+@keyframes scroll-left {
+  to {
+    left: -200px;
+  }
+}
+
+.box {
+  width: 200px;
+  height: 75px;
+  background-color: var(--footer-color);
+  border-radius: 10px;
+  position: absolute;
+  left: max(calc(150px * 4), 100%);
+  animation: scroll-left 10s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.box img {
+  width: 40px;
+  height: 40px;
+}
+
+.box1 {
+  animation-delay: calc(10s / 4 * (4 - 1) * -1);
+}
+
+.box2 {
+  animation-delay: calc(10s / 4 * (4 - 2) * -1);
+}
+
+.box3 {
+  animation-delay: calc(10s / 4 * (4 - 3) * -1);
+}
+
+.box4 {
+  animation-delay: calc(10s / 4 * (4 - 4) * -1);
+}
+
+.interests {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 50vh;
+}
+
+.interest-title {
+  font-size: 1.75em;
+  margin-bottom: 75px;
+}
+
+.interest-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.math img,
+.physics img,
+.chem img,
+.code img {
+  width: 30%;
+  height: auto;
+}
+
+.math,
+.physics,
+.chem,
+.code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid var(--text-color);
+  border-radius: 2rem;
+  font-size: 16px;
+  width: 205px;
+  height: 205px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.math:hover,
+.physics:hover,
+.chem:hover,
+.code:hover {
+  box-shadow: 0px 0px 10px 5px #888888;
+}
+
+/* Animation for Favorite subjects */
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    filter: blur(7px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/* Applying the animations */
+
+.about-me-image {
+  animation: reveal linear forwards;
+  animation-timeline: view();
+  animation-range: cover 0% cover 45%;
+}
+
+.math,
+.code,
+.physics,
+.chem,
+.interests,
+.marquee,
+.about-me-code{
+  animation: appear ease;
+  animation-timeline: view();
+  animation-range: cover 0% cover 40%;
+
+}
+
+.books__heading h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  font-size: 1.75rem;
+}
+
+.columns {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+  overflow-y: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 80em;
+}
+
+.column {
+  --column-offset: 10vh;
+	display: flex;
+	flex-direction: column;
+  padding: var(--column-offset) 0;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
+.column__item {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+.column__item img {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 0.7;
+}
+
+.column-reverse {
+  animation: adjust-position linear forwards;
+	animation-timeline: scroll(root block)  ;
+}
+
+@keyframes adjust-position {
+	from {
+		transform: translateY(calc(-100% + 100vh));
+	}
+	to {
+		transform: translateY(calc(100% - 100vh));
+	}
+}
+
+.places__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+}
